@@ -5,12 +5,12 @@
             android:gravity="center"/>
 
     </item>
-    <item>
+    <item android:top="700dp" android:left="700dp">
         <bitmap android:src="@drawable/changio"
             android:gravity="center"/>
 
     </item>
-    <item>
+    <item android:bottom="700dp" android:right="700dp">
         <bitmap android:src="@drawable/thitrang"
             android:gravity="center"/>
 

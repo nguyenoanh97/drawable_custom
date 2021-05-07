@@ -8,28 +8,28 @@
 
     <Button
         android:id="@+id/custom_button"
-        android:textColor="#ffffff"
+        android:textColor="@drawable/custom_color"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="144dp"
         android:layout_marginLeft="144dp"
         android:layout_marginTop="84dp"
-        android:background="@drawable/custom"
+        android:background="@drawable/custom_button"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
-        android:background="@drawable/custom_simple"
+        android:id="@+id/button_clip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="144dp"
         android:layout_marginLeft="144dp"
-        android:layout_marginTop="168dp"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/custom_button" />
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_simple"
+        android:text="Clip"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
@@ -37,14 +37,37 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="100dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/custom_simple"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/layerlist_img"
+        tools:ignore="MissingConstraints" />
+    <CheckBox
+        android:button="@drawable/custom_checkbox"
+        android:text="CheckBox"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageViewMonAn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/clip_image"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="170dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
