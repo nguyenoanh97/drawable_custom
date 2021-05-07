@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/nen"
+            android:gravity="center"/>
+
+    </item>
+    <item>
+        <bitmap android:src="@drawable/changio"
+            android:gravity="center"/>
+
+    </item>
+    <item>
+        <bitmap android:src="@drawable/thitrang"
+            android:gravity="center"/>
+
+    </item>
+
+
+</layer-list>
